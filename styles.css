@@ -200,7 +200,7 @@ body {
 
 .modal-content {
     background-color: #fff;
-    margin: 10vh auto;
+    margin: 5vh auto;
     padding: 2rem;
     border-radius: 8px;
     width: 90%;
@@ -391,8 +391,8 @@ body {
 }
 
 #finance-chart {
-    width: 100%;
-    height: 300px;
+    width: 50%;
+    height: 150px;
 }
 
 /* Transaction Controls Styles */
