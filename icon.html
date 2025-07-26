@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Icon Generator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .icon-wrapper {
+            width: 512px;
+            height: 512px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .icon {
+            width: 100%;
+            height: 100%;
+            background: #333;
+            border-radius: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .calendar {
+            width: 70%;
+            height: 70%;
+            background: white;
+            border-radius: 15px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .calendar-header {
+            background: #dc3545;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 72px;
+            font-weight: bold;
+        }
+        .calendar-body {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .dot {
+            background: #333;
+            border-radius: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="icon-wrapper">
+        <div class="icon">
+            <div class="calendar">
+                <div class="calendar-header">$</div>
+                <div class="calendar-body">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Icon Generator</title>
+    <style>
+        .icon-container {
+            width: 512px;
+            height: 512px;
+            background: #333;
+            border-radius: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .calendar-icon {
+            width: 70%;
+            height: 70%;
+            background: white;
+            border-radius: 10%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .calendar-top {
+            width: 100%;
+            height: 30%;
+            background: #dc3545;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 48px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .calendar-body {
+            padding: 10%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .calendar-dot {
+            background: #333;
+            border-radius: 50%;
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+        }
+
+        .instructions {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            line-height: 1.6;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>App Icon Generator</h1>
+
+    <div class="instructions">
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Take a screenshot of the icon below (you can use Windows+Shift+S or your browser's screenshot tool)</li>
+            <li>Crop the image to include just the square icon</li>
+            <li>Save two versions:
+                <ul>
+                    <li>Save one as <code>icon-512.png</code> at 512x512px size</li>
+                    <li>Save another as <code>icon-192.png</code> at 192x192px size</li>
+                </ul>
+            </li>
+            <li>Place both files in your project's root directory alongside <code>index.html</code></li>
+        </ol>
+    </div>
+
+    <div class="icon-container">
+        <div class="calendar-icon">
+            <div class="calendar-top">$</div>
+            <div class="calendar-body">
+                <div class="calendar-dot"></div>
+                <div class="calendar-dot"></div>
+                <div class="calendar-dot"></div>
+                <div class="calendar-dot"></div>
+                <div class="calendar-dot"></div>
+                <div class="calendar-dot"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
